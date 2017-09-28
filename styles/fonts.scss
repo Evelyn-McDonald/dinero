@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'fontBold';
+    src: url('../assets/fonts/font-bold-webfont.woff2') format('woff2'),
+         url('../assets/fonts/font-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+$font-bold: 'fontBold', Arial, sans-serif;
+
+@font-face {
+    font-family: 'fontLight';
+    src: url('../assets/fonts/font-light-webfont.woff2') format('woff2'),
+         url('../assets/fonts/font-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+$font-light: 'fontLight', Arial, sans-serif;
+
+@font-face {
+    font-family: 'fontRegular';
+    src: url('../assets/fonts/font-regular-webfont.woff2') format('woff2'),
+         url('../assets/fonts/font-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+$font-regular: 'fontRegular', Arial, sans-serif;
+
+@font-face {
+    font-family: 'fontSemibold';
+    src: url('../assets/fonts/font-semibold-webfont.woff2') format('woff2'),
+         url('../assets/fonts/font-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+$font-semibold: 'fontSemiBold', Arial, sans-serif;
+
+@font-face {
+    font-family: 'fontExtrabold';
+    src: url('../assets/fonts/font-extrabold-webfont.woff2') format('woff2'),
+         url('../assets/fonts/font-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+$font-extrabold: 'fontExtraBold', Arial, sans-serif;

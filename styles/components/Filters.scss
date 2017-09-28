@@ -1,0 +1,36 @@
+.Filters {
+    padding: 40px 0 0;
+
+    .input-group {
+        padding-right: 30px;
+    }
+    input, .select {
+        cursor: pointer;
+        font-size: 14px;
+        padding: 4px 0 8px;
+        background: none;
+        border-bottom: 1px solid hsla(216, 32%, 91%, 1);
+        border-radius: 0;
+
+        select {
+            padding: 2px 0;
+        }
+    }
+    label {
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    button {
+        color: $text-secondary;
+        background: $input-background;
+        border-radius: 8px;
+        font-size: 14px;
+        font-family: $font-semibold;
+        padding: 10px 16px;
+        text-transform: none;
+        margin-right: 0;
+        &:hover {
+            color: $primary;
+        }
+    }
+}

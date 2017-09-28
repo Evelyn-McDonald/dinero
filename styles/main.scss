@@ -1,0 +1,22 @@
+@import 'variables',
+        'fonts',
+        'mixins',
+        'animations';
+
+@import 'packages/normalize.scss',
+	'packages/bootstrap.scss',
+        'packages/datetime.scss';
+
+@import 'pages/App',
+        'pages/AdminPanel',
+        'pages/MyExpenses';
+
+@import 'components/AuthForm',
+        'components/SideBar',
+        'components/ExpenseItem',
+        'components/ExpenseList',
+        'components/ExpenseModal',
+        'components/Filters',
+        'components/Modal',
+        'components/Notification',
+        'components/UsersList';

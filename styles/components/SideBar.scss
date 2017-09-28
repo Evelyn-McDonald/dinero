@@ -1,0 +1,66 @@
+.SideBar {
+    .SideBar-logo {
+        color: $primary;
+        font-family: 'Advent Pro', sans-serif;
+        font-weight: 300;
+        font-size: 46px;
+        text-align: center;
+        padding-top: 6px;
+    }
+
+    .Sidebar-profile {
+        text-align: center;
+        margin-bottom: -20px;
+
+        .Sidebar-profile-image {
+            display: block;
+            background: $background-dark;
+            height: 80px;
+            width: 80px;
+            margin: 30px auto 18px;
+            border-radius: 50px;
+            font-size: 40px;
+            padding-top: 18px;
+            overflow: hidden;
+            i {
+                color: #dfeaf1;
+                font-size: 74px;
+            }
+        }
+        .Sidebar-profile-name {
+            color: $text-secondary;
+            display: block;
+            font-family: $font-semibold;
+            font-size: 18px;
+            margin-bottom: 2px;
+        }
+        .Sidebar-profile-role {
+            text-transform: capitalize;
+        }
+    }
+
+    .SideBar-nav {
+        list-style: none;
+        margin: 0;
+        padding: 60px 0 0;
+
+        li {
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: $font-semibold;
+            font-size: 15px;
+            padding: 18px 22px;
+            text-transform: capitalize;
+            @include transition(all 0.15s ease-in-out);
+
+            &.active {
+                background: $primary !important;
+                color: $white;
+            }
+            &:hover, &:focus, &:active {
+                background: $background-dark;
+                outline: none;
+            }
+        }
+    }
+}

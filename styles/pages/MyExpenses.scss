@@ -1,0 +1,92 @@
+.MyExpenses {
+    .MyExpenses-filterbar {
+        margin-top: -60px;
+        
+        .MyExpenses-print {
+            cursor: pointer;
+            text-align: right;
+            padding-right: 20px;
+        }
+    }
+    .MyExpenses-total {
+        color: $text-secondary;
+        font-size: 16px;
+        padding: 3px 10px;
+    }
+}
+
+/* Styles for printing expense report */
+@media print {
+    @page {
+        margin: 0cm;
+    }
+    .App-content-wrapper {
+        padding: 0;
+        .App-content {
+            padding: 0;
+        }
+    }
+
+    .App-sidebar-wrapper,
+    .MyExpenses-print {
+        display: none;
+    }
+    
+    .MyExpenses {
+        h1 {
+            color: #484c63;
+            font-size: 30px;
+            font-family: $font-bold;
+        }
+
+        .MyExpenses-filterbar {
+            margin-top: 80px !important;
+        }
+
+        .ExpenseItem {
+            width: 100%;
+            &:first-child {
+                display: none;
+            }
+        }
+        .ExpenseItem .ExpenseItem-wrapper {
+            border-bottom: 1px solid #eee;
+            border-top: 0 !important;
+            padding: 20px;
+            overflow: auto;
+            display: block;
+            height: auto;
+        }
+        .ExpenseItem .ExpenseItem-wrapper .ExpenseItem-amount {
+            font-size: 12px;
+            text-align: left;
+            width: 10%;
+            float: left;
+            margin: 0px;
+        }
+        .ExpenseItem .ExpenseItem-wrapper .ExpenseItem-description {
+            width: 25%;
+            float: left;
+            margin: 0px;
+            text-align: left;
+            font-size: 13px;
+        }
+        .ExpenseItem .ExpenseItem-wrapper .ExpenseItem-timestamp {
+            font-size: 10px;
+            width: 15%;
+            float: left;
+            text-align: left;
+            i {
+                display: none;
+            }
+        }
+        .ExpenseItem .ExpenseItem-wrapper .ExpenseItem-comment {
+            border: 0;
+            display: inline-block;
+            float: left;
+            margin: 0px;
+            padding: 0px;
+            width: 50%;
+        }
+    }
+}

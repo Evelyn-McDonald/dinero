@@ -1,0 +1,83 @@
+.ExpenseModal {
+    button {
+        margin-top: 30px;
+    }
+
+    .radio-btn {
+        display: inline-block;
+        width: 30px;
+    }
+
+    [type="radio"]:checked,
+    [type="radio"]:not(:checked) {
+        position: absolute;
+        left: -9999px;
+    }
+    [type="radio"]:checked + label,
+    [type="radio"]:not(:checked) + label
+    {
+        position: relative;
+        cursor: pointer;
+        display: inline-block;
+    }
+    [type="radio"]:checked + label:before,
+    [type="radio"]:not(:checked) + label:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 18px;
+        height: 18px;
+        border: 1px solid #ddd;
+        border-radius: 100%;
+        background: #fff;
+    }
+    #label1:checked + label:before,
+    #label1:not(:checked) + label:before {
+        border: 0;
+        background: $label1;
+    }
+    #label2:checked + label:before,
+    #label2:not(:checked) + label:before {
+        border: 0;
+        background: $label2;
+    }
+    #label3:checked + label:before,
+    #label3:not(:checked) + label:before {
+        border: 0;
+        background: $label3;
+    }
+    #label4:checked + label:before,
+    #label4:not(:checked) + label:before {
+        border: 0;
+        background: $label4;
+    }
+    #label5:checked + label:before,
+    #label5:not(:checked) + label:before {
+        border: 0;
+        background: $label5;
+    }
+    [type="radio"]:checked + label:after,
+    [type="radio"]:not(:checked) + label:after {
+        content: '';
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        border-radius: 100%;
+        border: 1px solid #c1cad0;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+    [type="radio"]:not(:checked) + label:after {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    [type="radio"]:checked + label:after {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}

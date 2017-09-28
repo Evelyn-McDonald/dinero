@@ -1,0 +1,12 @@
+.AdminPanel {
+    .AdminPanel-section {
+        padding: 20px;
+        &:first-of-type {
+        	margin-top: -60px;
+        	margin-bottom: 20px;
+        }
+        .Filters {
+        	padding-top: 20px;
+        }
+    }
+}

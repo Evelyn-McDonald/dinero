@@ -1,0 +1,4 @@
+module.exports = {
+	SET_ALL_EXPENSES:  'Expense.SET_ALL_EXPENSES',
+	SET_USER_EXPENSES:  'Expense.SET_USER_EXPENSES'
+}

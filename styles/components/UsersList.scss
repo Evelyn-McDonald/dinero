@@ -1,0 +1,57 @@
+.UsersList {
+    margin-top: -40px;
+
+    button.add-new {
+        float: right;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    table {
+        border-collapse: separate;
+        border-spacing: 0 12px;
+        width: 100%;
+
+        thead {
+            th {
+                font-family: $font-bold;
+                font-size: 13px;
+                text-align: left;
+                text-transform: uppercase;
+                padding: 0 20px;
+                &:nth-last-child(2), &:last-child {
+                    width: 60px;
+                    padding: 0;
+                }
+            }
+        }
+        tbody {
+            tr {
+                background: $white;
+                @include box-shadow(0 10px 26px 0 rgba(102,147,177,0.06));
+                @include transition(all 0.2s ease-in-out);
+
+                &:hover {
+                    @include box-shadow(0 10px 26px 0 rgba(102,147,177,0.18));
+                }
+
+                td {
+                    padding: 10px 20px;
+                    &:first-child {
+                        color: $text-secondary;
+                        font-family: $font-semibold;
+                    }
+                }
+            }
+        }
+
+        button {
+            background: none;
+            &.edit i {
+                color: $success;
+            }
+            &.delete i {
+                color: $error;
+            }
+        }   
+    }
+}
